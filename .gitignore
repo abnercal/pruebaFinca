@@ -1,0 +1,9 @@
+**/logs
+*.log
+*.env
+
+# dependencies
+/node_modules
+*/node_modules
+api/node_modules/*
+appPrueba/node_modules/*

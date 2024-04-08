@@ -1,0 +1,25 @@
+<div>
+    <h1 mat-dialog-title>Añadir Mensaje</h1>
+    <div mat-dialog-content>
+        <div class="dialog-content">
+
+            <form ngNativeCalidate [formGroup]="formMessage">
+                <div fxLayout="row" fxLayoutAlign="start">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Mensaje</mat-label>
+                        <input formControlName="msg" name="msg" type="text" matInput placeholder="ID">
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Tags</mat-label>
+                        <input formControlName="tags" name="tags" type="text" matInput placeholder="ID">
+                    </mat-form-field>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button (click)="cancelar()">Cancelar</button>
+        <button mat-button (click)="addMessage()" cdkFocusInitial>Guardar</button>
+    </div>
+</div>
